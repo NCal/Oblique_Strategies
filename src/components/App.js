@@ -20,10 +20,10 @@ class App extends Component {
   }
 
   componentDidMount() {
-    console.log('Component ' + this.props.name + ' Mounted');
+    // console.log('Component ' + this.props.name + ' Mounted');
   }
   outer_click_handler(e) {
-    console.log('outer click handler', e);
+    // console.log('outer click handler', e);
   }
 
   render(){
@@ -32,18 +32,9 @@ class App extends Component {
       <div className="application">
         <Row className="display">
           <Column  large={8}>
-             {/*} <div class="input_container">
-                <input className="title" type="" placeholder="Name Your Project"/>
-              </div> */}
               <Quote Quotes={Quote_array} onClick={this.outer_click_handler}/>
               <Player audio={audio}/>
               <About/>
-                {/*<div className="clipboard_container">
-                  <div className="clipboard">
-                    <ol></ol>
-                  </div>
-                </div> */}
-
           </Column>
         </Row>
         </div>

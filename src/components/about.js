@@ -8,7 +8,7 @@ class About extends Component{
 		
 	}
 	componentDidMount() {
-		console.log('hello');
+		// console.log('hello');
 	}
 	Hide(){
 		$('.about_container').slideUp('slow');

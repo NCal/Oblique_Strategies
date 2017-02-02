@@ -15,12 +15,12 @@ class Player extends Component {
 	}
 
 	componentDidMount() {
-		console.log(this.props.name+' mounted');
+		// console.log(this.props.name+' mounted');
 	}
 
 	play_audio(){
 		if (this.state.button_title === 'Play'){
-			console.log('play_audio');
+			// console.log('play_audio');
 			this.setState({button_title: 'Pause'});
 			var sound = document.querySelector('.audio_feed');
 			sound.play();
@@ -32,10 +32,10 @@ class Player extends Component {
 	}
 
 	next_audio(){
-		console.log('next audio');
+		// console.log('next audio');
 		var sound = document.querySelector('.audio_feed');
 		let next_stream = (this.state.current_stream_num +=1);
-		console.log('next_stream', next_stream);
+		// console.log('next_stream', next_stream);
 		if (next_stream === 4){
 			next_stream = 0;
 		}
@@ -48,7 +48,7 @@ class Player extends Component {
 		});
 
 		setTimeout(function(){
-			console.log(this.state);
+			// console.log(this.state);
 			sound.play();
 		},100);
 		

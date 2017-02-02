@@ -6,19 +6,18 @@ class Quote extends Component {
 	constructor(props) {
 		super(props);
 			this.click_handler = this.click_handler.bind(this);
-			// this.animate_quote = this.animate_quote.bind(this);
 			this.state ={
 				new_quote: 'Click'
 			};
 	}
 	componentDidMount() {
-		console.log(this.props.name+' mounted');
+		// console.log(this.props.name+' mounted');
 	}
 	click_handler(e){
 		let self = this;
 		let rand = Math.floor(Math.random()* this.props.Quotes.length);
 		let new_quote = this.props.Quotes[rand];
-		console.log(rand);
+		// console.log(rand);
 		// this.animate_quote(new_quote, self);
 		self.setState({new_quote: new_quote});
 	}

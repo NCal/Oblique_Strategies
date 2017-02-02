@@ -57,7 +57,7 @@ class Player extends Component {
 			return (<div>
 				<div>
 					<svg onClick={this.play_audio} className="ear_svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-						 width="40px" height="40px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xmlSpace="preserve">
+						 width="40px" height="40px" viewBox="0 0 24 24" enableBackground="new 0 0 24 24" xmlSpace="preserve">
 						<path fill="#222222" d="M17,20c-0.29,0-0.561-0.061-0.76-0.15c-0.711-0.369-1.211-0.879-1.711-2.379c-0.51-1.561-1.469-2.291-2.389-3
 						c-0.79-0.611-1.61-1.24-2.32-2.531C9.29,10.98,9,9.93,9,9c0-2.8,2.2-5,5-5s5,2.2,5,5h2c0-3.93-3.07-7-7-7c-3.93,0-7,3.07-7,7
 						c0,1.26,0.38,2.65,1.07,3.9c0.91,1.649,1.98,2.479,2.85,3.149c0.81,0.62,1.39,1.07,1.71,2.05c0.601,1.82,1.37,2.84,2.729,3.551

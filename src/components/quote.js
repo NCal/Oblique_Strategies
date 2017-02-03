@@ -25,7 +25,7 @@ class Quote extends Component {
 		return (<div>
 					<div className="container">
 					  <div className="quote-row">
-					    <Column className="large-centered right" large={4} medium={4} small={4} centerOnSmall centerOnMedium centerOnLarge>
+					    <Column className="large-centered right" large={4} medium={4} small={6} centerOnSmall centerOnMedium centerOnLarge>
 					      <div className="pin-solid icon" title="Add Strategy to Clipboard"></div>
 					      <div className="quote_container">
 					      	<p onClick={this.click_handler} className="quote animated infinite pulse">{this.state.new_quote}</p>

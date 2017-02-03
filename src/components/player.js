@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import $ from 'jQuery';
 class Player extends Component {
 	constructor(props) {
 		super(props);
@@ -15,7 +15,12 @@ class Player extends Component {
 	}
 
 	componentDidMount() {
-		// console.log(this.props.name+' mounted');
+		var width = $(window).width(); 
+		console.log(width);
+		if (width <600){
+			var sound = document.querySelector('.audio_feed');
+			sound.pause();
+		}
 	}
 
 	play_audio(){

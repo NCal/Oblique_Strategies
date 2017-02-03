@@ -16,7 +16,7 @@ class Player extends Component {
 
 	componentDidMount() {
 		var width = $(window).width(); 
-		console.log(width);
+		// console.log(width);
 		if (width <600){
 			var sound = document.querySelector('.audio_feed');
 			sound.pause();

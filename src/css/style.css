@@ -16,6 +16,16 @@ body {
   animation-iteration-count: infinite;
 }
 
+audio {
+  display: none;
+}
+
+.button {
+  text-align: center;
+  margin:  0;
+  cursor: pointer;
+}
+
 .main_container {
   margin:  0;
   padding: 0;
@@ -35,6 +45,8 @@ body {
   left: 0;
   right: 0;
 }
+
+/* ==== QUOTE ==== */
 
 .quote-row {
   text-align: center;
@@ -60,16 +72,10 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* -webkit-animation: pulsate 3s ease-in-out; */
-  /* -webkit-animation-iteration-count: infinite; */
-}
 
-audio {
-  display: none;
 }
-
+/* ==== PLAYER ==== */
 .player_container { 
-  /* background-color: #222; */
   height: 40px;
   width: 134px;
   position: absolute;
@@ -81,7 +87,6 @@ audio {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* border-top-right-radius: 5px; */
 
 }
 
@@ -92,6 +97,7 @@ audio {
   font-style: italic;
 }
 
+/* ==== EAR ==== */
 .ear_svg {
   opacity: .85;
   cursor: pointer;
@@ -105,13 +111,13 @@ audio {
   transition: 1s;
 }
 
+/* ==== ABOUT ==== */
 .about_container {
   position: absolute;
   padding: 20px;
   bottom: -15px;
   right: -10px;
   color: #222;
-  /* background-color: #222; */
   border-radius: 2px;
   padding-bottom: 0px;
   width: 280px;
@@ -122,7 +128,7 @@ audio {
   display: none;
 
 }
-
+/* ==== TAB ==== */
 .tab {
   margin: 0;
   width: 40px;
@@ -136,104 +142,6 @@ audio {
   right: 20px;
   -webkit-animation: pulsate 2s ease-in-out;
   -webkit-animation-iteration-count: infinite;
-}
-
-.pin-solid.icon {
-  color: #000;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  left: 623px;
-  width: 20px;
-  /* visibility: hidden; */
-  opacity: 0;
-  height: 20px;
-  /*     border: solid 1px currentColor; */
-  border-radius: 7px 7px 7px 0;
-  background-color: currentColor;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  cursor: pointer;
-}
-
-
-.pin-solid.icon:before {
-  position: absolute;
-  content: '';
-  margin-left: auto;
-  margin-right: auto;
-  left: 3px;
-  top: 3px;
-  width: 4px;
-  height: 4px;
-  color: white;
-  border: solid 1px currentColor;
-  border-radius: 3px;
-  background-color: currentColor;
-}
-
-.button {
-  text-align: center;
-  margin:  0;
-  cursor: pointer;
-}
-
-/* .next_button {
-  left:330px;
-} */
-
-.clipboard{
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  border-radius: 8px;
-  color: #444;
-  right: 0;
-  bottom: -260px;
-  background-color: #ccc;
-  opacity: .4;
-  overflow: scroll;
-   transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-}
-
-.clipboard:hover {
-   transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  opacity: 1;
-}
-
-.clipboard ol {
-  line-height: 22pt;
-  text-decoration: none;
-}
-
-.input_container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: transparent; 
-
-}
-
-.input_container input {
-  cursor: pointer;
-  font-family: Quicksand;
-  color: #777;
-  border-style: solid; 
-  text-align: center;
-  border-width: 0px 0px 0px 0px; 
-  border-color: #222;
-  height: 50px;
-  width: 50%;
-  font-size: 20px;
-}
-
-.input_container input:focus {
-  cursor: auto;
 }
 
 /* ==== ANIMATION  ==== */
@@ -281,7 +189,7 @@ audio {
   100% {background: rgba(249, 229, 159, 0.28);}
 }
 
-
+/* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width: 600px){
     .tab {

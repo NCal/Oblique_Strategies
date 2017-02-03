@@ -296,4 +296,8 @@ audio {
     .ear_svg {
       display: none;
     }
+
+    .container {
+      top: 150px;
+    }
   }

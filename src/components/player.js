@@ -20,6 +20,7 @@ class Player extends Component {
 		if (width <600){
 			var sound = document.querySelector('.audio_feed');
 			sound.pause();
+			this.setState({button_title: 'Play'});
 		}
 	}
 

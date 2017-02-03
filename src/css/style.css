@@ -277,3 +277,11 @@ body {
   100% {background: rgba(249, 229, 159, 0.28);}
 }
 
+
+
+@media screen and (max-width: 600px){
+    .tab {
+      visibility: hidden;
+      background-color: red;
+    }
+  }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jQuery';
+
+
 class Player extends Component {
 	constructor(props) {
 		super(props);
@@ -9,7 +11,7 @@ class Player extends Component {
 		this.state = {
 			current_stream_num: 0,
 			button_title: 'Pause',
-			stream: 'http://www.freesound.org/data/previews/327/327038_5650790-lq.mp3',
+			stream: 'src/assets/crickets.mp3',
 			audio_name: 'Crickets'
 		};
 	}

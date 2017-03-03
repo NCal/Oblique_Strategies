@@ -1,4 +1,4 @@
-var audio = [
+var Audio = [
 	{
 		src: "src/assets/crickets.mp3",
 		name: "Crickets"
@@ -17,4 +17,4 @@ var audio = [
 	}
 ];
 
-export default audio;
+export default Audio;

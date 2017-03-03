@@ -1,24 +1,19 @@
 import React, { Component } from 'react';
 import { Row, Column } from 'react-foundation';
 import Foundation from 'react-foundation';
-import $ from 'jQuery';
+
 class Quote extends Component {
 	constructor(props) {
 		super(props);
 			this.click_handler = this.click_handler.bind(this);
 			this.state ={
-				new_quote: 'Click'
+				new_quote: 'Click Here'
 			};
-	}
-	componentDidMount() {
-		// console.log(this.props.name+' mounted');
 	}
 	click_handler(e){
 		let self = this;
 		let rand = Math.floor(Math.random()* this.props.Quotes.length);
 		let new_quote = this.props.Quotes[rand];
-		// console.log(rand);
-		// this.animate_quote(new_quote, self);
 		self.setState({new_quote: new_quote});
 	}
 	render() {
@@ -41,6 +36,5 @@ class Quote extends Component {
 Quote.defaultProps = {
 	name: 'Quote'
 };
-
 
 export default Quote;

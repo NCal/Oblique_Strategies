@@ -1,211 +1,161 @@
 /* ==== WEB FONTS ==== */
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand+SC');
 
 /* ===== CONTAINER ELEMENT STYLES ===== */
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
 }
 body {
-  color: #576366;
-  margin: 0;
-  font-family: Quicksand, sans-serif; 
-  overflow: hidden;
-  background-color: #fff;
-  animation: colorchange 25s; 
-  /* -webkit-animation: colorchange 25s;  */
-  animation-iteration-count: infinite;
+   color: #fff;
+   margin: 0;
+   font-family: 'Patrick Hand SC', cursive;
+   overflow: hidden;
+   background-color: #222;
 }
 
 audio {
-  display: none;
+   display: none;
 }
 
-.button {
-  text-align: center;
-  margin:  0;
-  cursor: pointer;
+.tab, 
+.underlay, 
+.main_container, 
+.container, 
+.player_container, 
+.audio_name, 
+.about_container, 
+.ear_svg    {
+      position: absolute;
+}
+
+.tab,
+.button, 
+.quote, 
+.ear_svg, 
+.about_container {
+   cursor: pointer;
 }
 
 .main_container {
-  margin:  0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+   margin:   0;
+   padding: 0;
+   height: 100%;
+   width: 100%;
 }
 
 .application {
-  padding: 10px;
-  margin-top: 10px;
-  height: auto;
+   padding: 10px;
+   margin-top: 10px;
+   height: auto;
 } 
 
 .container {
-  position: absolute;
-  top: 170px;
-  left: 0;
-  right: 0;
+   top: 260px;
+   left: 0;
+   right: 0;
+}
+
+.button {
+   text-align: center;
+   margin:   0;
 }
 
 /* ==== QUOTE ==== */
-
 .quote-row {
-  text-align: center;
-  top: 200px;
+   text-align: center;
+   top: 200px;
 }
 
 .quote_container {
-  -webkit-animation:spin 30s linear infinite;
-  -moz-animation:spin 30s linear infinite;
-  animation:spin 30s linear infinite;
+   -webkit-animation:spin 30s linear infinite;
+   -moz-animation:spin 30s linear infinite;
+   animation:spin 30s linear infinite;
 }
 
 .quote {
-  font-size: 18pt;
-  color: #222;
-  text-align: center;
-  position: relative;
-  top: 20px;
-  cursor: pointer;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
+   font-size: 18pt;
+   text-align: center;
+   position: relative;
+   top: 20px;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
+
 /* ==== PLAYER ==== */
 .player_container { 
-  height: 40px;
-  width: 134px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
+   height: 40px;
+   width: 134px;
+   bottom: 0;
+   left: 0;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 }
 
 .audio_name {
-  position: absolute;
-  bottom: 45px;
-  left: 5px;
-  font-style: italic;
+   bottom: 45px;
+   left: 5px;
+   font-style: italic;
 }
 
 /* ==== EAR ==== */
 .ear_svg {
-  opacity: .85;
-  cursor: pointer;
-  position: absolute;
-  bottom: 70px;
-  left: 10px;
+   opacity: .4;
+   bottom: 70px;
+   left: 10px;
+   transition: 1s;
 }
 
 .ear_svg:hover {
-  opacity: 1;
-  transition: 1s;
+   opacity: 1;
+   transition: 1s;
 }
 
 /* ==== ABOUT ==== */
 .about_container {
-  position: absolute;
-  padding: 20px;
-  bottom: -15px;
-  right: -10px;
-  color: #222;
-  border-radius: 2px;
-  padding-bottom: 0px;
-  width: 280px;
-  opacity: .8;
-  z-index: 20;
-  margin: 0;
-  cursor: pointer;
-  display: none;
-
+   padding: 20px;
+   bottom: -15px;
+   right: -10px;
+   border-radius: 2px;
+   padding-bottom: 0px;
+   width: 280px;
+   opacity: .8;
+   z-index: 20;
+   margin: 0;
+   display: none;
 }
+
 /* ==== TAB ==== */
 .tab {
-  margin: 0;
-  width: 40px;
-  height: 40px;
-  border-radius: 2px;
-  text-align: center;
-  background-color: #1675b3;
-  position: absolute;
-  bottom: -15px;
-  cursor: pointer;
-  right: 20px;
-  -webkit-animation: pulsate 2s ease-in-out;
-  -webkit-animation-iteration-count: infinite;
+   background-color: #1675b3;
+   margin: 0;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   bottom: -15px;
+   right: 20px;
 }
 
-/* ==== ANIMATION  ==== */
-
+/* ==== ANIMATION   ==== */
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
-@-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(1, 1); }
-    50% {-webkit-transform: scale(1.2, 1.2); }
-    100% {-webkit-transform: scale(1, 1);}
-}
-
-@-moz-keyframes pulsate {
-    0% {-webkit-transform: scale(1, 1); }
-    50% {-webkit-transform: scale(1.2, 1.2); }
-    100% {-webkit-transform: scale(1, 1);}
-}
-
-@keyframes pulsate {
-    0% {-webkit-transform: scale(1, 1); }
-    50% {-webkit-transform: scale(1.2, 1.2); }
-    100% {-webkit-transform: scale(1, 1);}
-}
-
-@keyframes colorchange
-{
-  0%   {background: rgba(249, 229, 159, 0.28); }
-  50%  {background: rgba(255, 255, 255, 0.9);}
-  100% {background: rgba(249, 229, 159, 0.28);}
-}
-
-@-webkit-keyframes colorchange 
-{
-  0%   {background: rgba(249, 229, 159, 0.28);}
-  50%  {background: rgba(255, 255, 255, 0.9);}
-  100% {background: rgba(249, 229, 159, 0.28);}
-}
-
-@-moz-keyframes colorchange 
-{
-  0%   {background: rgba(249, 229, 159, 0.28);}
-  50%  {background: rgba(255, 255, 255, 0.9);}
-  100% {background: rgba(249, 229, 159, 0.28);}
-}
-
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width: 600px){
-    .tab {
-      display: none;
-      background-color: red;
-    }
+      .tab, .player_container,   .ear_svg {
+         display: none;
+      }
 
-    .player_container {
-      display: none;
-    }
-
-    .ear_svg {
-      display: none;
-    }
-
-    .container {
-      top: 150px;
-    }
-  }
+      .container {
+         top: 150px;
+      }
+   }
